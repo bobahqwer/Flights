@@ -29,5 +29,7 @@ namespace Flights.Models
         {
             return new ApplicationDbContext();
         }
+
+        public System.Data.Entity.DbSet<Flights.Models.Tickets.TicketsViewModels> TicketsViewModels { get; set; }
     }
 }
